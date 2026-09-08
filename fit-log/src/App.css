@@ -1,0 +1,14 @@
+.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  background-color: aliceblue;
+}
+
+.form-control {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+}
