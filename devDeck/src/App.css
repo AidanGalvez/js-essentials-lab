@@ -1,0 +1,33 @@
+header{
+  background: #18002b;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+label{
+  display: block;
+  color: #ccc;
+}
+
+h1{
+  color: #ccc;
+}
+
+.bookMark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.filter{
+  background: #18002b;
+  margin-top: 0rem;
+  padding: 1rem;
+  width: 100%;
+}
+.category{
+  background:rgb(30, 105, 155);
+}
+.category.All{
+  background:rgb(99, 11, 110);
+}
