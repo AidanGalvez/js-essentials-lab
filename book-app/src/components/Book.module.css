@@ -1,0 +1,22 @@
+.book {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.book h2 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.book h3 {
+  margin: 0 0 0.5rem 0;
+  color: #666;
+}
+
+.book p {
+  margin: 0;
+  color: #888;
+}
