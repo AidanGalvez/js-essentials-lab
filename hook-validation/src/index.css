@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.form-control.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.error-text {
+  color: #b40e0e;
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
