@@ -21,8 +21,19 @@ function App() {
   } = useInput((value) => value.includes("@"));
   // ----------
 
+   // ----------
+  const {
+    value: password,
+    isValid: passwordIsValid,
+    hasError: passwordHasError,
+    valueChangeHandler: passwordChangeHandler,
+    inputBlurHandler: passwordBlurHandler,
+    reset: resetPassword
+  } = useInput((value) => value.length >= 8);
+  // ----------
+
   let formIsValid = false;
-  if (nameIsValid && emailIsValid)
+  if (nameIsValid && emailIsValid && passwordIsValid)
     formIsValid = true;
 
   const formSubmitHandler = (event) => {
@@ -33,10 +44,12 @@ function App() {
     // Reset input
     resetName();
     resetEmail();
+    resetPassword();
   };
 
   const nameClasses = nameHasError ? "form-control invalid" : "form-control"
   const emailClasses = emailHasError ? "form-control invalid" : "form-control"
+  const passwordClasses = passwordHasError ? "form-control invalid" : "form-control"
 
   return (
     <form onSubmit={formSubmitHandler}>
@@ -63,6 +76,18 @@ function App() {
           onBlur={emailBlurHandler}
         />
         { emailHasError && <p className = "error-text">Email must contain @.</p> }
+      </div>
+
+      <div className={passwordClasses}>
+        <label htmlFor="email">Your Password</label>
+        <input
+          type="password"
+          id="password"
+          value={password}
+          onChange={passwordChangeHandler}
+          onBlur={passwordBlurHandler}
+        />
+        { passwordHasError && <p className = "error-text">Password must have a length greater than 8 Characters.</p> }
       </div>
 
       <div className="form-actions">
