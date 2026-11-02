@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Book-Haven",
+    "\\Book-Haven\\src",
+    "\\Book-Haven\\src\\components",
+    "\\Book-Haven\\src\\components\\Books",
+    "\\Book-Haven\\src\\components\\Books\\book-item",
+    "\\Book-Haven\\src\\components\\Cart",
+    "\\Book-Haven\\src\\components\\Layout",
+    "\\Book-Haven\\src\\components\\UI"
+  ],
+  "SelectedNode": "\\Book-Haven\\src\\components\\Books\\AvailableBooks.jsx",
+  "PreviewInSolutionExplorer": false
+}
